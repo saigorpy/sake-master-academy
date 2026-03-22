@@ -1,0 +1,7 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/sake-master-academy/'   // ← If you used a different repo name, change this to /your-repo-name/
+})
