@@ -63,6 +63,10 @@ const LearningHub = () => (
     <div className="max-w-4xl mx-auto px-6 py-12">
       <SakeSMVChart />
     </div>
+    {/* BREWING PROCESS - 你原本最愛的釀造流程 */}
+    <div className="max-w-4xl mx-auto px-6">
+      <SakeBrewingProcess />
+    </div>
     <div className="max-w-4xl mx-auto px-6 py-12 bg-white rounded-3xl shadow-2xl mx-6">
       <SakeFlavorMatrix />
     </div>
