@@ -5,6 +5,7 @@ import SakeFlavorMatrix from './components/SakeFlavorMatrix';
 import SakeLabelDecoder from './components/SakeLabelDecoder';
 import SakeMasterQuiz from './components/SakeMasterQuiz';
 import { sakeData } from './data/sake-data';
+import SakeSMVChart from './components/SakeSMVChart';
 
 const Nav = () => {
   const location = useLocation();
@@ -57,6 +58,11 @@ const LearningHub = () => (
     </div>
 
     {/* FLAVOR MATRIX */}
+    
+    {/* SMV INTERACTIVE CHART - THE ONE YOU LOVED */}
+    <div className="max-w-4xl mx-auto px-6 py-12">
+      <SakeSMVChart />
+    </div>
     <div className="max-w-4xl mx-auto px-6 py-12 bg-white rounded-3xl shadow-2xl mx-6">
       <SakeFlavorMatrix />
     </div>
