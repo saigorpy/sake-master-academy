@@ -6,6 +6,7 @@ import SakeLabelDecoder from './components/SakeLabelDecoder';
 import SakeMasterQuiz from './components/SakeMasterQuiz';
 import { sakeData } from './data/sake-data';
 import SakeSMVChart from './components/SakeSMVChart';
+import SakeBrewingProcess from './components/SakeBrewingProcess';
 
 const Nav = () => {
   const location = useLocation();
