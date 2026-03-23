@@ -47,8 +47,25 @@ const steps = [
     title: "上槽・濾過・火入れ",
     emoji: "🏭",
     time: "1-2 週",
-    desc: "壓榨酒渣、過濾、火入（殺菌）。生酒則跳過火入直接瓶裝。",
-    detail: "原酒（Genshu）不加水稀釋，酒精度更高、風味最濃烈。"
+    desc: "壓榨、分離、過濾、殺菌的最後階段。這一步決定酒的澄澈度與最終風味。",
+    detail: `
+      <strong>① 上槽（Jōsō / 壓榨）</strong><br>
+      把發酵完成的 Moromi 放入壓榨機（Yabuta 或袋吊），把清酒與酒糟（Kasu）分離。<br><br>
+      
+      <strong>② 濾過（Roka / Filtration） — 這一步最影響口感！</strong><br>
+      • 濾紙過濾：最傳統，保留細微米香<br>
+      • 活性炭過濾：去除雜味與顏色（常用於大吟釀）<br>
+      • 離心過濾：現代高速方式，保留更多風味<br>
+      • 無濾過（Muroka）：故意不濾，保留自然渾濁與強烈米香（代表酒：無濾過生原酒）<br><br>
+      
+      <strong>③ 火入れ（Hiire / Pasteurization）</strong><br>
+      加熱至 60-65°C 殺死酵母與雜菌，讓酒穩定保存。生酒（Namazake）則完全跳過這步。<br><br>
+      
+      <strong>特別風格：</strong><br>
+      • 原酒 Genshu：不上槽後不加水稀釋，酒精度 17-20%，風味最濃<br>
+      • にごり酒 Nigori：只粗濾，保留乳白色酒糟，口感甜美濃郁<br>
+      • 無濾過生原酒：不濾、不稀釋、不加熱，最原始、最強烈的清酒體驗
+    `
   }
 ];
 
@@ -89,9 +106,10 @@ const SakeBrewingProcess = () => {
                 <p className="text-stone-600 mt-3 leading-relaxed">{step.desc}</p>
                 
                 {activeStep === idx && (
-                  <div className="mt-6 pt-6 border-t border-amber-200 text-stone-700 animate-in fade-in">
-                    {step.detail}
-                  </div>
+                  <div 
+                    className="mt-8 pt-8 border-t border-amber-200 text-stone-700 leading-relaxed prose prose-stone max-w-none animate-in fade-in"
+                    dangerouslySetInnerHTML={{ __html: step.detail }}
+                  />
                 )}
               </div>
             </div>
@@ -100,8 +118,8 @@ const SakeBrewingProcess = () => {
       </div>
 
       <div className="text-center text-xs text-stone-400 mt-12">
-        這 6 步就是日本清酒與其他米酒最大的不同 —— 「並行複發酵」與「麴文化」<br />
-        現在你已經知道酒是如何從一粒米變成一杯藝術了！
+        濾過這一步是清酒與其他米酒最大的差異之一 —— 決定了「清」還是「濃」<br />
+        現在你已經完整掌握從米到杯的整個工藝了！
       </div>
     </div>
   );
