@@ -64,4 +64,43 @@ export const sakeData = {
     { term: "生酒 (Namazake)", meaning: "未經加熱殺菌的酒，口感新鮮但需全程冷藏。" },
     { term: "無濾過生原酒", meaning: "不經過濾、不加水稀釋、不加熱，最原始強烈的風味。" }
   ]
+  // ── NEW: MASTER LIBRARY (Trello Part B) ──
+  library: {
+    rice: [
+      { name: "山田錦", desc: "酒米之王，Shinapaku 大，適合大吟釀" },
+      { name: "雄町", desc: "古老原生米，土味與複雜酸度" }
+    ],
+    yeast: [
+      { name: "協會 9 號", desc: "香蕉梨果香，吟釀標準酵母" }
+    ],
+    gi: [
+      { name: "GI 山形", desc: "高級吟釀，柔軟清澈" },
+      { name: "GI 灘 (兵庫)", desc: "宮水硬水 → 雄厚乾爽" },
+      { name: "GI 伏見 (京都)", desc: "軟水 → 優雅女性風格" },
+      { name: "GI 白山 (石川)", desc: "日本最早 GI，結構深厚" }
+    ]
+  },
+
+  // ── NEW: GLOSSARY FOR TOOLTIPS ──
+  glossary: {
+    "並行複發酵": "Multiple Parallel Fermentation — 清酒獨有，糖化與發酵同時進行",
+    "SMV": "日本酒度 — 正值越乾，負值越甜",
+    "生酛": "傳統乳酸自然培養法，風味濃郁",
+    "山廢": "簡化生酛，旨味強烈",
+    "雫酒": "袋吊自然滴酒，只用於最高級比賽酒",
+    "Koshu": "熟成清酒，梅納反應產生蜂蜜、醬油風味",
+    "Awa-Sake": "氣泡清酒，需自然瓶內二次發酵才可標 Awa-Sake 協會印"
+  },
+
+  // ── NEW: MASTER MODULES 2–6 (full Trello content) ──
+  modules: {
+    level3: {
+      title: "大師級 Module 2–6",
+      m2_pillars: "四大支柱：山田錦 Shinpaku 結構、硬水 vs 軟水對發酵影響、Tsuki-haze vs Soku-haze、酵母 No.9（香蕉）與 1801（蘋果）酯類表",
+      m3_alchemy: "生酛（4週）、山廢、速釀 + 並行複發酵 + 壓榨三段（Arabashiri / Nakadori / Seme）",
+      m4_classification: "8種特級名稱法律定義 + 10% 酒精添加上限 + GI 制度（山形、灘、伏見、白山）",
+      m5_sommelier: "系統性品飲（SAT） + 10種溫度名稱（雪冷 5°C → 熱燗 55°C） + 酒器物理（白酒杯 vs お猪口 vs 升）",
+      m6_modern: "氣泡清酒三法（注入 / Charmat / 傳統法） + Koshu 梅納反應 + 分子餐配（無單寧優勢、蛋/蘆筍/芝士完美配對）"
+    }
+  }
 };
